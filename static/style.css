@@ -28,7 +28,6 @@ body{
     color: #1C398E;
     padding: 10px;
     border-radius: 999px;
-    transition: background-color 0.3s;
 }
 
 .ni-container a:hover {
@@ -40,6 +39,11 @@ body{
 
 .hero-section {
     background: linear-gradient(135deg, #1C398E 50%, #4e7edd 100%);
+}
+
+.company{
+    border: 2px solid rgb(227, 227, 227);
+    border-radius: 25px;
 }
 
 .picture{
@@ -133,7 +137,6 @@ body{
     border-color: #ffb300;
 }
 
-/* Card Hover Effects */
 .card {
     transition: box-shadow 0.3s ease;
 }

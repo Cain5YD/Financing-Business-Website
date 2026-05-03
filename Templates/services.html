@@ -38,7 +38,471 @@
             </li>
         </ul>
     </nav>
+    <!-- Header -->
+    <section class="hero-section text-white py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Our Services & Products</h1>
+            <p class="lead">Comprehensive financial solutions for every stage of life</p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="bg-light py-3 sticky-top" style="top: 56px;">
+        <div class="container">
+            <div class="d-flex gap-2 overflow-auto">
+                <button class="btn btn-primary category-btn active" data-category="all">All</button>
+                <button class="btn btn-outline-primary category-btn" data-category="Lending">Lending</button>
+                <button class="btn btn-outline-primary category-btn" data-category="Investment">Investment</button>
+                <button class="btn btn-outline-primary category-btn" data-category="Insurance">Insurance</button>
+                <button class="btn btn-outline-primary category-btn" data-category="Advisory">Advisory</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="servicesGrid">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Lending</span>
+                            <h3 class="h5 fw-bold mb-3">Personal Loan</h3>
+                            <p class="text-muted">Flexible personal loans for any purpose with competitive rates</p>
+                            <div class="h4 text-warning mb-3">From 5.99% APR</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Up to $50,000</li>
+                                <li>✓ Quick approval</li>
+                                <li>✓ Flexible terms</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Personal Loan" data-price="From 5.99% APR">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Lending</span>
+                            <h3 class="h5 fw-bold mb-3">Home Mortgage</h3>
+                            <p class="text-muted">Fixed and variable rate mortgages for your dream home</p>
+                            <div class="h4 text-warning mb-3">From 3.25% APR</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ 30-year fixed</li>
+                                <li>✓ 15-year fixed</li>
+                                <li>✓ FHA loans</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Home Mortgage" data-price="From 3.25% APR">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Lending</span>
+                            <h3 class="h5 fw-bold mb-3">Auto Loan</h3>
+                            <p class="text-muted">Finance your new or used vehicle with low rates</p>
+                            <div class="h4 text-warning mb-3">From 4.49% APR</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ New & used cars</li>
+                                <li>✓ Up to 72 months</li>
+                                <li>✓ No prepayment penalty</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Auto Loan" data-price="From 4.49% APR">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Lending</span>
+                            <h3 class="h5 fw-bold mb-3">Business Loan</h3>
+                            <p class="text-muted">Capital for your business growth and operations</p>
+                            <div class="h4 text-warning mb-3">From 6.5% APR</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Up to $500,000</li>
+                                <li>✓ Working capital</li>
+                                <li>✓ Equipment financing</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Business Loan" data-price="From 6.5% APR">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Lending</span>
+                            <h3 class="h5 fw-bold mb-3">Student Loan Refinancing</h3>
+                            <p class="text-muted">Lower your monthly student loan payments</p>
+                            <div class="h4 text-warning mb-3">From 4.25% APR</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Federal & private</li>
+                                <li>✓ No origination fees</li>
+                                <li>✓ Flexible repayment</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Student Loan Refinancing" data-price="From 4.25% APR">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Lending</span>
+                            <h3 class="h5 fw-bold mb-3">Credit Builder Loan</h3>
+                            <p class="text-muted">Build or rebuild your credit score</p>
+                            <div class="h4 text-warning mb-3">$500 - $5,000</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Report to credit bureaus</li>
+                                <li>✓ Affordable payments</li>
+                                <li>✓ Build savings</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Credit Builder Loan" data-price="$500 - $5,000">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Investment">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Investment</span>
+                            <h3 class="h5 fw-bold mb-3">Investment Portfolio Management</h3>
+                            <p class="text-muted">Professional management of your investment portfolio</p>
+                            <div class="h4 text-warning mb-3">1% annual fee</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Diversified portfolios</li>
+                                <li>✓ Tax optimization</li>
+                                <li>✓ Quarterly reviews</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Investment Portfolio Management" data-price="1% annual fee">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Investment">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Investment</span>
+                            <h3 class="h5 fw-bold mb-3">Retirement Planning (401k/IRA)</h3>
+                            <p class="text-muted">Secure your retirement with strategic planning</p>
+                            <div class="h4 text-warning mb-3">Free consultation</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ 401k rollover</li>
+                                <li>✓ Roth IRA</li>
+                                <li>✓ Traditional IRA</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Retirement Planning" data-price="Free consultation">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Investment">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Investment</span>
+                            <h3 class="h5 fw-bold mb-3">Mutual Funds</h3>
+                            <p class="text-muted">Access to diverse mutual fund options</p>
+                            <div class="h4 text-warning mb-3">From 0.5% expense ratio</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Stock funds</li>
+                                <li>✓ Bond funds</li>
+                                <li>✓ Balanced funds</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Mutual Funds" data-price="From 0.5% expense ratio">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Investment">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Investment</span>
+                            <h3 class="h5 fw-bold mb-3">Stock & Bond Trading</h3>
+                            <p class="text-muted">Trade stocks and bonds with our platform</p>
+                            <div class="h4 text-warning mb-3">$4.95 per trade</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Real-time quotes</li>
+                                <li>✓ Research tools</li>
+                                <li>✓ Mobile trading</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Stock & Bond Trading" data-price="$4.95 per trade">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 11 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Investment">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Investment</span>
+                            <h3 class="h5 fw-bold mb-3">College Savings Plan (529)</h3>
+                            <p class="text-muted">Tax-advantaged savings for education expenses</p>
+                            <div class="h4 text-warning mb-3">No setup fee</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Tax-free growth</li>
+                                <li>✓ Flexible withdrawals</li>
+                                <li>✓ State tax benefits</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="College Savings Plan" data-price="No setup fee">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 12 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Investment">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Investment</span>
+                            <h3 class="h5 fw-bold mb-3">Real Estate Investment Trust (REIT)</h3>
+                            <p class="text-muted">Invest in real estate without owning property</p>
+                            <div class="h4 text-warning mb-3">Minimum $1,000</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Passive income</li>
+                                <li>✓ Diversification</li>
+                                <li>✓ Professional management</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="REIT Investment" data-price="Minimum $1,000">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 13 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Insurance">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Insurance</span>
+                            <h3 class="h5 fw-bold mb-3">Life Insurance</h3>
+                            <p class="text-muted">Protect your family's financial future</p>
+                            <div class="h4 text-warning mb-3">From $25/month</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Term life</li>
+                                <li>✓ Whole life</li>
+                                <li>✓ Universal life</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Life Insurance" data-price="From $25/month">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 14 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Insurance">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Insurance</span>
+                            <h3 class="h5 fw-bold mb-3">Health Insurance</h3>
+                            <p class="text-muted">Comprehensive health coverage options</p>
+                            <div class="h4 text-warning mb-3">Custom quotes</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Individual plans</li>
+                                <li>✓ Family coverage</li>
+                                <li>✓ PPO & HMO options</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Health Insurance" data-price="Custom quotes">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 15 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Insurance">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Insurance</span>
+                            <h3 class="h5 fw-bold mb-3">Auto Insurance</h3>
+                            <p class="text-muted">Full coverage for your vehicle</p>
+                            <div class="h4 text-warning mb-3">From $75/month</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Liability</li>
+                                <li>✓ Collision</li>
+                                <li>✓ Comprehensive</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Auto Insurance" data-price="From $75/month">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 16 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Insurance">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Insurance</span>
+                            <h3 class="h5 fw-bold mb-3">Home Insurance</h3>
+                            <p class="text-muted">Protect your home and belongings</p>
+                            <div class="h4 text-warning mb-3">From $100/month</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Property damage</li>
+                                <li>✓ Liability</li>
+                                <li>✓ Personal property</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Home Insurance" data-price="From $100/month">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 17 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Insurance">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Insurance</span>
+                            <h3 class="h5 fw-bold mb-3">Disability Insurance</h3>
+                            <p class="text-muted">Income protection if you can't work</p>
+                            <div class="h4 text-warning mb-3">From $40/month</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Short-term</li>
+                                <li>✓ Long-term</li>
+                                <li>✓ Income replacement</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Disability Insurance" data-price="From $40/month">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 18 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Insurance">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Insurance</span>
+                            <h3 class="h5 fw-bold mb-3">Business Insurance</h3>
+                            <p class="text-muted">Comprehensive coverage for your business</p>
+                            <div class="h4 text-warning mb-3">Custom quotes</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ General liability</li>
+                                <li>✓ Property</li>
+                                <li>✓ Workers comp</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Business Insurance" data-price="Custom quotes">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 19 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Advisory">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Advisory</span>
+                            <h3 class="h5 fw-bold mb-3">Financial Planning Consultation</h3>
+                            <p class="text-muted">Comprehensive financial planning session</p>
+                            <div class="h4 text-warning mb-3">$299 per session</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Goal setting</li>
+                                <li>✓ Budget analysis</li>
+                                <li>✓ Action plan</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Financial Planning" data-price="$299 per session">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 20 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Advisory">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Advisory</span>
+                            <h3 class="h5 fw-bold mb-3">Tax Planning Services</h3>
+                            <p class="text-muted">Strategic tax planning and optimization</p>
+                            <div class="h4 text-warning mb-3">$499 annually</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Tax strategies</li>
+                                <li>✓ Deduction maximization</li>
+                                <li>✓ Year-round support</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Tax Planning" data-price="$499 annually">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 21 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Advisory">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Advisory</span>
+                            <h3 class="h5 fw-bold mb-3">Estate Planning</h3>
+                            <p class="text-muted">Protect and transfer your wealth</p>
+                            <div class="h4 text-warning mb-3">$799 setup</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Will creation</li>
+                                <li>✓ Trust setup</li>
+                                <li>✓ Beneficiary planning</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Estate Planning" data-price="$799 setup">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 22 -->
+                <div class="col-md-6 col-lg-4 service-item" data-category="Advisory">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Advisory</span>
+                            <h3 class="h5 fw-bold mb-3">Debt Consolidation Services</h3>
+                            <p class="text-muted">Simplify and reduce your debt payments</p>
+                            <div class="h4 text-warning mb-3">Free consultation</div>
+                            <ul class="list-unstyled mb-3">
+                                <li>✓ Lower interest</li>
+                                <li>✓ Single payment</li>
+                                <li>✓ Faster payoff</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 add-to-cart" data-service="Debt Consolidation" data-price="Free consultation">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h2 class="display-6 mb-3">Need Help Choosing?</h2>
+            <p class="lead mb-4">Our financial advisors are here to help you find the perfect solution</p>
+            <a href="contact.html" class="btn btn-warning btn-lg">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3">ProFin Solutions</h5>
+                    <p class="text-muted">Empowering your financial future with innovative solutions and personalized service.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-muted mb-1">123 Finance Street, Business District</p>
+                    <p class="text-muted mb-1">Email: info@profinsolutions.com</p>
+                    <p class="text-muted mb-1">Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 ProFin Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     
+    <script src="/static/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
