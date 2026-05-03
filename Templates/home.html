@@ -8,7 +8,155 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    
+
+    <!--Navigation Bar-->
+    <nav class="navbar d-flex justify-content-between py-4 shadow-lg sticky-top">
+        <div class="brand-container ms-5">
+            <a href="home.html" class="d-flex align-items-center">
+                <img src="../static/img/TorFin.png" alt="TorFin Logo" style="width: 70px; height: 70px;">
+                <div class="ms-3">
+                    <h5 class="h5 fs-2 my-0">TORFIN</h5>
+                    <p class="small d-block my-0">FINANCIAL SOLUTIONS</p>
+                </div>
+            </a>
+        </div>
+        <ul class="nav gap-4">
+            <div class="d-flex container ni-container gap-4 shadow-lg ms-0">
+                <li class="nav-item active"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="about us.html">About Us</a></li>
+                <li class="nav-item"><a href="services.html">Services</a></li>
+                <li class="nav-item"><a href="contact us.html">Contact Us</a></li>
+                <li class="nav-item"><a href="register.html">Register</a></li>
+                <li class="nav-item"><a href="student bio.html">Student Bio</a></li>
+            </div>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="d-flex align-items-center btn btn-warning text-primary fw-semibold btn-lg fs-6 me-5 gap-2" href="cart.html">
+                    <img id="cart" src="/static/img/cart.svg" alt="Cart" style="width: 20px; height: 20px;"> Cart
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="hero-section text-white">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="col-lg-5">
+                    <h1 class="display-3 fw-bold mb-4">Building Your Financial Future Together</h1>
+                    <p class="lead mb-4">TORFIN Solutions provides comprehensive financial services tailored to your needs. From personal loans to investment management, we're here to help you succeed.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="services.html" class="d-flex align-items-center fw-semibold fs-6 btn btn-warning btn-lg text-primary">Explore Services</a>
+                        <a href="register.html" class="btn btn-outline-light btn-lg">Get Started</a>
+                    </div>
+                </div>
+                <img src="/static/img/Torres_Picture_1_-removebg-preview.png" alt="My Picture" class="picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4">
+                            <div class="icon-circle bg-primary bg-opacity-10 mb-3">
+                                <img id="mission-arrow" src="/static/img/graph-up-arrow.svg" alt="Mission">
+                            </div>
+                            <h2 class="card-title mb-3">Our Mission</h2>
+                            <p class="card-text">To empower individuals and businesses with accessible, innovative financial solutions that promote economic growth and financial stability. We are committed to delivering exceptional service, building lasting relationships, and creating value for our clients through integrity, expertise, and personalized support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4">
+                            <div class="icon-circle bg-warning bg-opacity-25 mb-3">
+                                <img id="vision-award" src="/static/img/award.svg" alt="Vision">
+                            </div>
+                            <h2 class="card-title mb-3">Our Vision</h2>
+                            <p class="card-text">To become the leading financial services provider recognized for innovation, trustworthiness, and client-centric solutions. We envision a future where every individual and business has the tools and support needed to achieve financial independence and sustainable growth in an ever-evolving economic landscape.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nature of Business -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="card-title display-5 fw-bold mb-3">About Our Business</h2>
+                <p class="lead fw-semibold">TORFIN Solutions is a comprehensive financial services company specializing in lending, investment management, insurance products, and financial consulting.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="icon-circle bg-primary bg-opacity-10 mx-auto mb-3">
+                        <img id="shield" src="/static/img/shield-fill.svg" alt="Shield">
+                    </div>
+                    <h3 class="h4 mb-3 fw-bold">Secure & Trusted</h3>
+                    <p class="text-muted">Licensed and regulated financial institution with over 15 years of experience</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-circle bg-primary bg-opacity-10 mx-auto mb-3">
+                        <img id="people" src="/static/img/people.svg" alt="People">
+                    </div>
+                    <h3 class="h4 mb-3 fw-bold">Client-Focused</h3>
+                    <p class="text-muted">Personalized financial solutions designed around your unique goals and needs</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-circle bg-primary bg-opacity-10 mx-auto mb-3">
+                        <img id="mission-arrow" src="/static/img/graph-up-arrow.svg" alt="Growth">
+                    </div>
+                    <h3 class="h4 mb-3 fw-bold">Growth Oriented</h3>
+                    <p class="text-muted">Strategic financial planning to help you build and protect your wealth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-action text-white py-5">
+        <div class="container text-center">
+            <h2 class="display-6 mb-3">Ready to Transform Your Financial Future?</h2>
+            <p class="lead mb-4">Join thousands of satisfied clients who trust ProFin Solutions</p>
+            <a href="register.html" class="fw-semibold fs-6 btn btn-warning btn-lg text-primary">Open an Account Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3 mb-5">
+                    <h5 class="fw-bold mb-3">TORFIN Solutions</h5>
+                    <p>Empowering your financial future with innovative solutions and personalized service.</p>
+                </div>
+                <div class="col-md-1 mb-5">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="quick-links list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li><a href="services.html" class="text-decoration-none">Services</a></li>
+                        <li><a href="contact.html" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="mb-1">123 Finance Street, Philippines</p>
+                    <p class="mb-1">Email: torresjhonrobert671@gmail.com</p>
+                    <p class="mb-1">Phone: +63 952 457 6586</p>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center py-2">
+            <p class="mb-0">&copy; 2026 TORFIN Solutions. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

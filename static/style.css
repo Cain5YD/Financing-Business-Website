@@ -1,0 +1,215 @@
+body{
+    background-color: #F9FAFB;
+}
+
+.navbar{
+    background-color: #1C398E;
+}
+
+.brand-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.ni-container a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.ni-container{
+    background: #145ea8;
+    padding: 20px;
+    border-radius: 999px;
+}
+
+.nav-item.active a {
+    background-color: white;
+    color: #1C398E;
+    padding: 10px;
+    border-radius: 999px;
+    transition: background-color 0.3s;
+}
+
+.ni-container a:hover {
+    background-color: white;
+    color: #1C398E;
+    padding: 10px;
+    border-radius: 999px;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1C398E 50%, #4e7edd 100%);
+}
+
+.picture{
+    width: 300px;
+    height: 300px;
+    border-radius: 99px;
+    border: 5px solid white;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 2);
+}
+
+.call-action{
+    background-color: #1C398E;
+}
+
+.quick-links a:hover{
+    color: rgb(255, 255, 0);
+}
+
+.footer-bg{
+    background-color: #101828;
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.card-title{
+    color: #1C398E !important;
+    font-weight: bold;
+}
+
+/* Student Avatar */
+.student-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Success Icon */
+.success-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d4edda;
+    color: #28a745;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* Hover Card Effect */
+.hover-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.hover-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar Customization */
+.navbar-dark {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-warning {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-warning:hover {
+    background-color: #ffb300;
+    border-color: #ffb300;
+}
+
+/* Card Hover Effects */
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Service Item Animation */
+.service-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.service-item.hidden {
+    display: none;
+}
+
+/* Category Button Active State */
+.category-btn.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .student-avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 2.5rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem !important;
+    }
+}
+
+/* Form Validation Styles */
+.was-validated .form-control:valid {
+    border-color: #28a745;
+}
+
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+/* Utility Classes */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+#cart{
+    filter: invert(27%) sepia(50%) saturate(3970%) hue-rotate(211deg) brightness(103%) contrast(99%);
+}
+
+#mission-arrow, #people, #shield{
+    width: 25px;
+    height: 25px;
+    filter: invert(19%) sepia(71%) saturate(1504%) hue-rotate(202deg) brightness(97%) contrast(98%);
+}
+
+#vision-award{
+    width: 25px;
+    height: 25px;
+    filter: invert(79%) sepia(53%) saturate(5115%) hue-rotate(0deg) brightness(105%) contrast(105%);
+}
