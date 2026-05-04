@@ -56,7 +56,9 @@
     <section class="py-5">
         <div class="container">
             <div id="emptyCart" class="text-center py-5">
-                <div class="icon-circle bg-secondary bg-opacity-10 mx-auto mb-4" style="width: 80px; height: 80px; font-size: 2.5rem;">🛒</div>
+                <div class="icon-circle bg-secondary bg-opacity-10 mx-auto mb-4" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                    <img id="cart" src="/static/img/cart.svg" alt="Cart" style="width: 40px; height: 40px;">
+                </div>
                 <h2 class="h3 fw-bold mb-3">Your cart is empty</h2>
                 <p class="text-muted mb-4">Explore our financial services and add products to get started</p>
                 <a href="services.html" class="btn btn-primary">Browse Services</a>
@@ -66,8 +68,13 @@
                 <!-- Cart Items -->
                 <div class="col-lg-8">
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h2 class="h4 fw-bold text-primary mb-0">Selected Services (<span id="itemCount">0</span>)</h2>
-                        <button class="btn btn-outline-danger btn-sm" onclick="clearCart()">🗑️ Clear All</button>
+                        <h2 class="h4 fw-bold card-title mb-0">Selected Services (<span id="itemCount">0</span>)</h2>
+                        <button class="clear-cart btn btn-outline-danger btn-sm" onclick="clearCart()">
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <img id="trash" src="/static/img/trash-fill.svg" alt="Delete">
+                                <p class="fw-semibold mb-0">Clear All</p>
+                            </div>
+                        </button>
                     </div>
                     <div id="cartItems"></div>
                 </div>
@@ -106,35 +113,40 @@
     </section>
 
     <!-- Help Section -->
-    <section class="bg-light py-5" id="helpSection" style="display: none;">
+    <section class="call-action bg-light py-5" id="helpSection" style="display: none;">
         <div class="container text-center">
-            <h3 class="h4 fw-bold text-primary mb-3">Need Help Deciding?</h3>
+            <h3 class="h4 fw-bold card-title mb-3">Need Help Deciding?</h3>
             <p class="text-muted mb-4">Our financial advisors are available to help you choose the right services for your needs. Contact us for a free consultation.</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="contact.html" class="btn btn-primary">Contact an Advisor</a>
-                <a href="#" class="btn btn-outline-primary">Schedule a Call</a>
+                <a href="contact us.html" class="btn btn-primary">Contact an Advisor</a>
             </div>
         </div>
     </section>
 
     <!-- Trust Indicators -->
-    <section class="bg-primary text-white py-4">
+    <section class="ti-section text-white py-4">
         <div class="container">
             <div class="row text-center g-3">
                 <div class="col-6 col-md-3">
-                    <div class="fs-3 mb-1">🔒</div>
+                    <div class="fs-3 mb-1">
+                        <img id="shield2" src="/static/img/shield-fill.svg" alt="">
+                    </div>
                     <p class="small mb-0">Secure Processing</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="fs-3 mb-1">✓</div>
+                    <div class="fs-3 mb-1">
+                        <img id="check" src="/static/img/check2-circle.svg" style="width: 35px; height: 35px;">
+                    </div>
                     <p class="small mb-0">FDIC Insured</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="fs-3 mb-1">🏆</div>
+                    <div class="fs-3 mb-1">
+                        <img id="vision-award" src="/static/img/award.svg" style="width: 35px; height: 35px;">
+                    </div>
                     <p class="small mb-0">Award Winning Service</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="fs-3 mb-1">24/7</div>
+                    <div class="fs-3 mb-1 fw-bold">24/7</div>
                     <p class="small mb-0">Customer Support</p>
                 </div>
             </div>

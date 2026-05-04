@@ -32,12 +32,12 @@ function loadCart() {
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="flex-grow-1">
-                                <span class="badge bg-${getCategoryColor(item.category)} mb-2">${item.category}</span>
-                                <h3 class="h5 fw-bold text-primary mb-2">${item.name}</h3>
-                                <div class="h6 text-warning mb-0">${item.price}</div>
+                                <span class="service-badge fw-semibold small mb-2">${item.category}</span>
+                                <h3 class="h5 fw-bold card-title mb-1 mt-4">${item.name}</h3>
+                                <div class="h6 services-prices mb-0">${item.price}</div>
                             </div>
                             <button class="btn btn-outline-danger btn-sm" onclick="removeItem(${index})">
-                                🗑️
+                                <img id="trash" src="/static/img/trash-fill.svg" alt="Delete">
                             </button>
                         </div>
                     </div>
