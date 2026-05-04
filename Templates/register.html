@@ -20,7 +20,15 @@
                 </div>
             </a>
         </div>
-        <ul class="nav gap-4">
+
+        <!-- hamburger button (responsiveness) -->
+        <button class="hamburger me-5" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav gap-4" id="navMenu">
             <div class="d-flex container ni-container gap-4 shadow-lg ms-0">
                 <li class="nav-item active"><a href="home.html">Home</a></li>
                 <li class="nav-item"><a href="about us.html">About Us</a></li>
@@ -30,7 +38,8 @@
                 <li class="nav-item"><a href="student bio.html">Student Bio</a></li>
             </div>
         </ul>
-        <a class="d-flex align-items-center btn btn-warning text-primary fw-semibold btn-lg fs-6 me-5 gap-2" href="cart.html">
+
+        <a class="d-flex align-items-center btn btn-warning text-primary fw-semibold btn-lg fs-6 me-5 gap-2" href="cart.html" id="cartBtn">
             <img id="cart" src="/static/img/cart.svg" alt="Cart" style="width: 20px; height: 20px;"> Cart
         </a>
     </nav>

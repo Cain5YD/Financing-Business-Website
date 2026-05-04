@@ -6,6 +6,78 @@ body{
     background-color: #1C398E;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 800px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #navMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1C398E;
+        padding: 10px 20px;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    #navMenu.open {
+        display: flex;
+    }
+
+    .ni-container {
+        flex-direction: column;
+        border-radius: 20px !important;
+        background-color: transparent !important;
+        border: none !important;
+        padding: 18px !important;
+        width: 100%;
+        gap: 2px !important;
+    }
+
+    .ni-container .nav-item a {
+        display: block;
+        width: 100%;
+        padding: 10px 16px !important;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .nav-item.active a {
+        padding: 10px 16px !important;
+    }
+
+    #cartBtn {
+        display: none;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        position: relative;
+    }
+}
+
 .brand-container a{
     text-decoration: none;
     color: white;
@@ -148,7 +220,7 @@ body{
 }
 
 .card:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Service Item Animation */
@@ -160,10 +232,38 @@ body{
     display: none;
 }
 
+.services-prices{
+    color: #D08700 !important;
+}
+
+.service-badge{
+    background: #cff3ff;
+    border-radius: 999px;
+    color: #1C398E;
+    padding: 4px 15px;
+    align-self: flex-start;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
 /* Category Button Active State */
 .category-btn.active {
-    background-color: var(--primary-color) !important;
+    background-color: #1C398E !important;
     color: white !important;
+    pointer-events: none;
+}
+
+.category-btn{
+    background-color: white !important;
+    border-radius: 999px !important;
+    padding: 8px 25px !important;
+}
+
+.category-btn:hover{
+    background-color: rgb(221, 221, 221) !important;
+    border-radius: 999px !important;
 }
 
 /* Responsive adjustments */
@@ -221,4 +321,9 @@ body{
     width: 25px;
     height: 25px;
     filter: invert(79%) sepia(53%) saturate(5115%) hue-rotate(0deg) brightness(105%) contrast(105%);
+}
+
+#check{
+    width: 20px;
+    filter: invert(66%) sepia(57%) saturate(3514%) hue-rotate(106deg) brightness(92%) contrast(101%);
 }

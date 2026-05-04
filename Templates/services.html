@@ -20,7 +20,15 @@
                 </div>
             </a>
         </div>
-        <ul class="nav gap-4">
+
+        <!-- hamburger button (responsiveness) -->
+        <button class="hamburger me-5" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav gap-4" id="navMenu">
             <div class="d-flex container ni-container gap-4 shadow-lg ms-0">
                 <li class="nav-item active"><a href="home.html">Home</a></li>
                 <li class="nav-item"><a href="about us.html">About Us</a></li>
@@ -30,10 +38,12 @@
                 <li class="nav-item"><a href="student bio.html">Student Bio</a></li>
             </div>
         </ul>
-        <a class="d-flex align-items-center btn btn-warning text-primary fw-semibold btn-lg fs-6 me-5 gap-2" href="cart.html">
+
+        <a class="d-flex align-items-center btn btn-warning text-primary fw-semibold btn-lg fs-6 me-5 gap-2" href="cart.html" id="cartBtn">
             <img id="cart" src="/static/img/cart.svg" alt="Cart" style="width: 20px; height: 20px;"> Cart
         </a>
     </nav>
+
     <!-- Header -->
     <section class="hero-section text-white py-5">
         <div class="container">
@@ -45,12 +55,12 @@
     <!-- Category Filter -->
     <section class="bg-light py-3 sticky-top" style="top: 118px;">
         <div class="container">
-            <div class="d-flex gap-2 overflow-auto">
-                <button class="btn btn-primary category-btn active" data-category="all">All</button>
-                <button class="btn btn-outline-primary category-btn" data-category="Lending">Lending</button>
-                <button class="btn btn-outline-primary category-btn" data-category="Investment">Investment</button>
-                <button class="btn btn-outline-primary category-btn" data-category="Insurance">Insurance</button>
-                <button class="btn btn-outline-primary category-btn" data-category="Advisory">Advisory</button>
+            <div class="d-flex gap-3 overflow-auto">
+                <button class="btn category-btn fw-semibold active" data-category="all">All</button>
+                <button class="btn category-btn fw-semibold" data-category="Lending">Lending</button>
+                <button class="btn category-btn fw-semibold" data-category="Investment">Investment</button>
+                <button class="btn category-btn fw-semibold" data-category="Insurance">Insurance</button>
+                <button class="btn category-btn fw-semibold" data-category="Advisory">Advisory</button>
             </div>
         </div>
     </section>
@@ -63,16 +73,16 @@
                 <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <span class="badge bg-primary mb-2">Lending</span>
-                            <h3 class="h5 fw-bold mb-3">Personal Loan</h3>
+                            <span class="service-badge fw-semibold small">Lending</span>
+                            <h3 class="card-title h3 fw-bold mb-3 mt-3">Personal Loan</h3>
                             <p class="text-muted">Flexible personal loans for any purpose with competitive rates</p>
-                            <div class="h4 text-warning mb-3">From 5.99% APR</div>
+                            <div class="services-prices h4 mb-3">From 5.99% APR</div>
                             <ul class="list-unstyled mb-3">
-                                <li>✓ Up to $50,000</li>
-                                <li>✓ Quick approval</li>
-                                <li>✓ Flexible terms</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Up to $50,000</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Quick approval</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Flexible terms</li>
                             </ul>
-                            <button class="btn btn-primary w-100 add-to-cart" data-service="Personal Loan" data-price="From 5.99% APR">Add to Cart</button>
+                            <button class="btn btn-primary w-100 add-to-cart mt-auto" data-service="Personal Loan" data-price="From 5.99% APR">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -81,16 +91,16 @@
                 <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <span class="badge bg-primary mb-2">Lending</span>
-                            <h3 class="h5 fw-bold mb-3">Home Mortgage</h3>
+                            <span class="service-badge fw-semibold small">Lending</span>
+                            <h3 class="card-title h3 fw-bold mb-3 mt-3">Home Mortgage</h3>
                             <p class="text-muted">Fixed and variable rate mortgages for your dream home</p>
-                            <div class="h4 text-warning mb-3">From 3.25% APR</div>
+                            <div class="services-prices h4 mb-3">From 3.25% APR</div>
                             <ul class="list-unstyled mb-3">
-                                <li>✓ 30-year fixed</li>
-                                <li>✓ 15-year fixed</li>
-                                <li>✓ FHA loans</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> 30-year fixed</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> 15-year fixed</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> FHA loans</li>
                             </ul>
-                            <button class="btn btn-primary w-100 add-to-cart" data-service="Home Mortgage" data-price="From 3.25% APR">Add to Cart</button>
+                            <button class="btn btn-primary w-100 add-to-cart mt-auto" data-service="Home Mortgage" data-price="From 3.25% APR">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -99,16 +109,16 @@
                 <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <span class="badge bg-primary mb-2">Lending</span>
-                            <h3 class="h5 fw-bold mb-3">Auto Loan</h3>
+                            <span class="service-badge fw-semibold small">Lending</span>
+                            <h3 class="card-title h3 fw-bold mb-3 mt-3">Auto Loan</h3>
                             <p class="text-muted">Finance your new or used vehicle with low rates</p>
-                            <div class="h4 text-warning mb-3">From 4.49% APR</div>
+                            <div class="services-prices h4 mb-3">From 4.49% APR</div>
                             <ul class="list-unstyled mb-3">
-                                <li>✓ New & used cars</li>
-                                <li>✓ Up to 72 months</li>
-                                <li>✓ No prepayment penalty</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> New & used cars</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Up to 72 months</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> No prepayment penalty</li>
                             </ul>
-                            <button class="btn btn-primary w-100 add-to-cart" data-service="Auto Loan" data-price="From 4.49% APR">Add to Cart</button>
+                            <button class="btn btn-primary w-100 add-to-cart mt-auto" data-service="Auto Loan" data-price="From 4.49% APR">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -117,16 +127,16 @@
                 <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <span class="badge bg-primary mb-2">Lending</span>
-                            <h3 class="h5 fw-bold mb-3">Business Loan</h3>
+                            <span class="service-badge fw-semibold small">Lending</span>
+                            <h3 class="card-title h3 fw-bold mb-3 mt-3">Business Loan</h3>
                             <p class="text-muted">Capital for your business growth and operations</p>
-                            <div class="h4 text-warning mb-3">From 6.5% APR</div>
+                            <div class="services-prices h4 mb-3">From 6.5% APR</div>
                             <ul class="list-unstyled mb-3">
-                                <li>✓ Up to $500,000</li>
-                                <li>✓ Working capital</li>
-                                <li>✓ Equipment financing</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Up to $500,000</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Working capital</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Equipment financing</li>
                             </ul>
-                            <button class="btn btn-primary w-100 add-to-cart" data-service="Business Loan" data-price="From 6.5% APR">Add to Cart</button>
+                            <button class="btn btn-primary w-100 add-to-cart mt-auto" data-service="Business Loan" data-price="From 6.5% APR">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -135,16 +145,16 @@
                 <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <span class="badge bg-primary mb-2">Lending</span>
-                            <h3 class="h5 fw-bold mb-3">Student Loan Refinancing</h3>
+                            <span class="service-badge fw-semibold small">Lending</span>
+                            <h3 class="card-title h3 fw-bold mb-3 mt-3">Student Loan Refinancing</h3>
                             <p class="text-muted">Lower your monthly student loan payments</p>
-                            <div class="h4 text-warning mb-3">From 4.25% APR</div>
+                            <div class="services-prices h4 mb-3">From 4.25% APR</div>
                             <ul class="list-unstyled mb-3">
-                                <li>✓ Federal & private</li>
-                                <li>✓ No origination fees</li>
-                                <li>✓ Flexible repayment</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Federal & private</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> No origination fees</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Flexible repayment</li>
                             </ul>
-                            <button class="btn btn-primary w-100 add-to-cart" data-service="Student Loan Refinancing" data-price="From 4.25% APR">Add to Cart</button>
+                            <button class="btn btn-primary w-100 add-to-cart mt-auto" data-service="Student Loan Refinancing" data-price="From 4.25% APR">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -153,14 +163,14 @@
                 <div class="col-md-6 col-lg-4 service-item" data-category="Lending">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <span class="badge bg-primary mb-2">Lending</span>
-                            <h3 class="h5 fw-bold mb-3">Credit Builder Loan</h3>
+                            <span class="service-badge fw-semibold small">Lending</span>
+                            <h3 class="card-title h3 fw-bold mb-3 mt-3">Credit Builder Loan</h3>
                             <p class="text-muted">Build or rebuild your credit score</p>
-                            <div class="h4 text-warning mb-3">$500 - $5,000</div>
+                            <div class="services-prices h4 mb-3">$500 - $5,000</div>
                             <ul class="list-unstyled mb-3">
-                                <li>✓ Report to credit bureaus</li>
-                                <li>✓ Affordable payments</li>
-                                <li>✓ Build savings</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Report to credit bureaus</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Affordable payments</li>
+                                <li><img id="check" src="/static/img/check2.svg" alt="check"> Build savings</li>
                             </ul>
                             <button class="btn btn-primary w-100 add-to-cart" data-service="Credit Builder Loan" data-price="$500 - $5,000">Add to Cart</button>
                         </div>
@@ -459,45 +469,46 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-primary text-white py-5">
+    <section class="call-action text-white py-5">
         <div class="container text-center">
-            <h2 class="display-6 mb-3">Need Help Choosing?</h2>
+            <h2 class="fw-bold display-6 mb-3">Need Help Choosing?</h2>
             <p class="lead mb-4">Our financial advisors are here to help you find the perfect solution</p>
-            <a href="contact.html" class="btn btn-warning btn-lg">Contact Us Today</a>
+            <a href="register.html" class="fw-semibold fs-6 btn btn-warning btn-lg text-primary">Contact Us Today</a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+<!-- Footer -->
+    <footer class="footer-bg text-white py-4">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3">ProFin Solutions</h5>
-                    <p class="text-muted">Empowering your financial future with innovative solutions and personalized service.</p>
+            <div class="row justify-content-between">
+                <div class="col-md-3 mb-5">
+                    <h5 class="fw-bold mb-3">TORFIN Solutions</h5>
+                    <p>Empowering your financial future with innovative solutions and personalized service.</p>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-1 mb-5">
                     <h6 class="fw-bold mb-3">Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
-                        <li><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
-                        <li><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
-                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    <ul class="quick-links list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li><a href="services.html" class="text-decoration-none">Services</a></li>
+                        <li><a href="contact.html" class="text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-3 mb-5">
                     <h6 class="fw-bold mb-3">Contact Info</h6>
-                    <p class="text-muted mb-1">123 Finance Street, Business District</p>
-                    <p class="text-muted mb-1">Email: info@profinsolutions.com</p>
-                    <p class="text-muted mb-1">Phone: +1 (555) 123-4567</p>
+                    <p class="mb-1">123 Finance Street, Philippines</p>
+                    <p class="mb-1">Email: torresjhonrobert671@gmail.com</p>
+                    <p class="mb-1">Phone: +63 952 457 6586</p>
                 </div>
             </div>
-            <hr class="border-secondary">
-            <div class="text-center text-muted">
-                <p class="mb-0">&copy; 2026 ProFin Solutions. All rights reserved.</p>
-            </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center py-2">
+            <p class="mb-0">&copy; 2026 TORFIN Solutions. All rights reserved.</p>
         </div>
     </footer>
     
+    <script src="/static/services.js"></script>
     <script src="/static/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
