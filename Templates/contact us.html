@@ -59,32 +59,38 @@
             <div class="row g-4">
                 <!-- Contact Information -->
                 <div class="col-lg-5">
-                    <h2 class="h3 fw-bold text-primary mb-4">Get In Touch</h2>
+                    <h2 class="card-title h3 fw-bold mb-4">Get In Touch</h2>
                     <p class="text-muted mb-4">Have questions about our services? Want to discuss your financial goals? Our team is ready to assist you.</p>
 
                     <div class="mb-4">
                         <div class="d-flex align-items-start mb-3">
-                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0">📍</div>
+                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0">
+                                <img id="location" src="/static/img/geo-alt.svg" alt="Location">
+                            </div>
                             <div>
                                 <h3 class="h6 fw-bold mb-1">Visit Our Office</h3>
-                                <p class="text-muted mb-0">123 Finance Street, Business District<br>New York, NY 10001</p>
+                                <p class="text-muted mb-0">123 Finance Street, Cebu City<br>Philippines, PH 6000</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-4">
                         <div class="d-flex align-items-start mb-3">
-                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0">📞</div>
+                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0">
+                                <img id="contact" src="/static/img/telephone.svg" alt="Contact">
+                            </div>
                             <div>
                                 <h3 class="h6 fw-bold mb-1">Call Us</h3>
-                                <p class="text-muted mb-0">Main: +1 (555) 123-4567<br>Toll-Free: 1-800-PROFIN-1</p>
+                                <p class="text-muted mb-0">Main: +63 (555) 123-4567<br>Toll-Free: 63-800-TORFIN-63</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-4">
                         <div class="d-flex align-items-start mb-3">
-                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0">✉️</div>
+                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0">
+                                <img id="mail" src="/static/img/envelope.svg" alt="Mail">
+                            </div>
                             <div>
                                 <h3 class="h6 fw-bold mb-1">Email Us</h3>
                                 <p class="text-muted mb-0">info@profinsolutions.com<br>support@profinsolutions.com</p>
@@ -94,7 +100,9 @@
 
                     <div class="mb-4">
                         <div class="d-flex align-items-start mb-3">
-                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0">🕒</div>
+                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0">
+                                <img id="hours" src="/static/img/clock.svg" alt="Hours">
+                            </div>
                             <div>
                                 <h3 class="h6 fw-bold mb-1">Business Hours</h3>
                                 <p class="text-muted mb-0">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 3:00 PM<br>Sunday: Closed</p>
@@ -107,25 +115,25 @@
                 <div class="col-lg-7">
                     <div class="card shadow">
                         <div class="card-body p-4">
-                            <h2 class="h3 fw-bold text-primary mb-4">Send Us a Message</h2>
+                            <h2 class="card-title h3 fw-bold mb-4">Send Us a Message</h2>
                             <form action="thank-you.html" method="get">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label fw-semibold">Full Name *</label>
-                                    <input type="text" class="form-control" id="name" name="name" required placeholder="John Doe">
+                                    <label for="name" class="form-label fw-semibold">Full Name <span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name...">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="email" class="form-label fw-semibold">Email Address *</label>
-                                    <input type="email" class="form-control" id="email" name="email" required placeholder="john@example.com">
+                                    <label for="email" class="form-label fw-semibold">Email Address <span style="color: red;">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required placeholder="youremail@example.com">
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="phone" class="form-label fw-semibold">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(555) 123-4567">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(+63) 123-456-7890">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="subject" class="form-label fw-semibold">Subject *</label>
+                                    <label for="subject" class="form-label fw-semibold">Subject <span style="color: red;">*</span></label>
                                     <select class="form-select" id="subject" name="subject" required>
                                         <option value="">Select a subject</option>
                                         <option value="general">General Inquiry</option>
@@ -138,7 +146,7 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="message" class="form-label fw-semibold">Message *</label>
+                                    <label for="message" class="form-label fw-semibold">Message <span style="color: red;">*</span></label>
                                     <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
                                 </div>
 
@@ -154,12 +162,14 @@
     <!-- Additional Contact Options -->
     <section class="bg-light py-5">
         <div class="container">
-            <h2 class="h3 fw-bold text-primary text-center mb-5">Other Ways to Connect</h2>
+            <h2 class="card-title h3 fw-bold text-center mb-5">Other Ways to Connect</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card text-center h-100 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="fs-1 mb-3">💬</div>
+                        <div class="d-flex justify-content-center align-items-center card-body p-4">
+                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0 mb-3">
+                                <img id="chat" src="/static/img/chat.svg" alt="Hours">
+                            </div>
                             <h3 class="h5 fw-bold mb-3">Live Chat</h3>
                             <p class="text-muted mb-3">Chat with our support team in real-time</p>
                             <a href="#" class="text-primary fw-semibold">Start Chat</a>
@@ -168,8 +178,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card text-center h-100 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="fs-1 mb-3">📅</div>
+                        <div class="d-flex justify-content-center align-items-center card-body p-4">
+                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0 mb-3">
+                                <img id="calendar" src="/static/img/calendar4.svg" alt="calendar">
+                            </div>
                             <h3 class="h5 fw-bold mb-3">Schedule Appointment</h3>
                             <p class="text-muted mb-3">Book a meeting with a financial advisor</p>
                             <a href="#" class="text-primary fw-semibold">Book Now</a>
@@ -178,8 +190,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card text-center h-100 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="fs-1 mb-3">❓</div>
+                        <div class="d-flex justify-content-center align-items-center card-body p-4">
+                            <div class="icon-circle bg-primary bg-opacity-10 me-3 flex-shrink-0 mb-3">
+                                <img id="questions" src="/static/img/question-lg.svg" alt="Questions">
+                            </div>
                             <h3 class="h5 fw-bold mb-3">FAQ Center</h3>
                             <p class="text-muted mb-3">Find answers to common questions</p>
                             <a href="#" class="text-primary fw-semibold">View FAQs</a>

@@ -311,7 +311,10 @@ body{
     filter: invert(27%) sepia(50%) saturate(3970%) hue-rotate(211deg) brightness(103%) contrast(99%);
 }
 
-#mission-arrow, #people, #shield, #Integrity, #suitcase{
+#mission-arrow, #people, #shield, 
+#Integrity, #suitcase, #location,
+#contact, #mail, #hours,
+#chat, #calendar, #questions{
     width: 25px;
     height: 25px;
     filter: invert(19%) sepia(71%) saturate(1504%) hue-rotate(202deg) brightness(97%) contrast(98%);
