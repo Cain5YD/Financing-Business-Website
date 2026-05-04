@@ -46,6 +46,14 @@ body{
     border-radius: 25px;
 }
 
+.call-action{
+    background-color: #1C398E;
+}
+
+.stats-section{
+    background-color: #1C398E;
+}
+
 .picture{
     width: 300px;
     height: 300px;
@@ -54,9 +62,7 @@ body{
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 2);
 }
 
-.call-action{
-    background-color: #1C398E;
-}
+
 
 .quick-links a:hover{
     color: rgb(255, 255, 0);
@@ -205,7 +211,7 @@ body{
     filter: invert(27%) sepia(50%) saturate(3970%) hue-rotate(211deg) brightness(103%) contrast(99%);
 }
 
-#mission-arrow, #people, #shield{
+#mission-arrow, #people, #shield, #Integrity, #suitcase{
     width: 25px;
     height: 25px;
     filter: invert(19%) sepia(71%) saturate(1504%) hue-rotate(202deg) brightness(97%) contrast(98%);
